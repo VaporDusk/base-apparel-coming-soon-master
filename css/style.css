@@ -1,0 +1,167 @@
+body {
+  margin: 0;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+h1, p {
+  margin-block: 0;
+  margin-inline: 0;
+}
+
+.container {
+  width: 23.4375rem;
+  height: 50rem;
+  margin: auto;
+  background-image: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+}
+
+.logo {
+  width: 6.25rem;
+  margin: 2rem 0 1.75rem 2rem;
+}
+
+.hero-mobile {
+  display: block;
+  margin: 0 0 4rem;
+}
+
+.hero-desktop {
+  display: none;
+}
+
+.header {
+  display: table-caption;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.75rem;
+  line-height: 1.05em;
+  margin: 0 4rem 1rem;
+}
+
+.header-light {
+  font-weight: 300;
+  color: hsl(0, 36%, 70%);
+}
+
+.text {
+  text-align: center;
+  margin: 0 2rem 2rem;
+  font-size: 0.875rem;
+  line-height: 1.6em;
+  color: hsl(0, 36%, 70%);
+}
+
+.form {
+  position: relative;
+  margin: 0 0 0.5rem;
+}
+
+.email {
+  width: 17rem;
+  height: 2.875rem;
+  margin: 0 0 0 2rem;
+  padding: 0 0 0 1.5rem;
+  border: 1px solid hsla(0, 6%, 24%, 0.5);
+  border-radius: 1.5rem;
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: transparent;
+  opacity: 0.5;
+}
+
+.email::placeholder {
+  color: hsl(0, 36%, 70%);
+  opacity: 1;
+}
+
+.email::-ms-input-placeholder {
+  color: hsl(0, 36%, 70%);
+}
+
+.errorIcon {
+  position: absolute;
+  top: 0.875rem;
+  left: 15rem;
+}
+
+.button {
+  position: absolute;
+  left: 17.5rem;
+  padding: 0.875rem 1.5rem;
+  border-radius: 1.5rem;
+  background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  box-shadow: 0 1rem 1.8rem -0.4rem hsla(0deg, 36%, 70%, 0.75);
+}
+
+.error-text {
+  margin: 0 0 0 4rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.042em;
+  color: hsl(0, 93%, 68%);
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    box-sizing: border-box;
+    width: 90rem;
+    margin: 0 auto;
+    padding: 0 0 0 10.25rem;
+    background: url("../images/bg-pattern-desktop.svg") no-repeat;
+  }
+
+  .logo {
+    width: 10rem;
+    margin: 4rem 0 8.125rem;
+  }
+
+  .hero-mobile {
+    display: none;
+  }
+
+  .hero-desktop {
+    display: block;
+    float: right;
+    margin: 0 0 0 13.5rem;
+  }
+
+  .header {
+    font-size: 4rem;
+    margin: 0 0 1.375rem;
+    text-align: left;
+    line-height: 1.0625em;
+    letter-spacing: 1rem;
+  }
+
+  .text {
+    text-align: left;
+    margin: 0 0 2.5rem;
+    font-size: 1rem;
+    line-height: 1.75rem;
+  }
+
+  .form {
+    margin: 0 0 0.875rem;
+  }
+
+  .email {
+    margin: 0;
+    width: 23.75rem;
+    height: 3.25rem;
+    border-radius: 1.625rem;
+  }
+
+  .errorIcon {
+    top: 1.125rem;
+    left: 19.125rem;
+  }
+
+  .button {
+    left: 21.625rem;
+    padding: 1.125rem 2.75rem;
+    border-radius: 1.75rem;
+  }
+
+  .error-text {
+    margin: 0 0 0 2rem;
+  }
+}
